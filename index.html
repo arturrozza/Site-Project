@@ -6,18 +6,119 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <title>Apicultura</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Apiário</title>
 </head>
 <body>
-    <header class="header">
-        <img src="images/apitherapy.png" alt="">
-        <h1>Apis melifera scutellata</h1>
-    </header>
-    <main>
-        <h2> Apis mellifera scutellata veio do leste da África em 1956. Também conhecida como Abelha-Africana, é uma espécie muito agressiva, polinizadora, enxameadora e migratória.</h2>
-    </main>
-    <article>
-    </article>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="images/apitherapy.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>Maiking website is now one of the easiest thing in the world.
+            You just need to learn HTML, CSS, <br> Javascript and you are good to go.
+        </p>
+        <a href="" class="hero-btn">Visit Us To know More</a>
+    </div>    
+    </section>
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolorum iusto, aspernatur delectus ipsam doloribus voluptate corporis veniam alias nostrum qui, ex enim ipsum quae, officia aliquam possimus recusandae atque eaque?</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur ducimus, est rem voluptatem consequuntur praesentium aliquam eius asperiores impedit dolore nobis quo provident sapiente laudantium, velit minima reiciendis quia.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur ducimus, est rem voluptatem consequuntur praesentium aliquam eius asperiores impedit dolore nobis quo provident sapiente laudantium, velit minima reiciendis quia.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Post Graduation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur ducimus, est rem voluptatem consequuntur praesentium aliquam eius asperiores impedit dolore nobis quo provident sapiente laudantium, velit minima reiciendis quia.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="webimages/london.png" alt="">
+                <div class="layer">
+                    <h3>London</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="webimages/newyork.png" alt="">
+                <div class="layer">
+                    <h3>New York</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="webimages/washington.png" alt="">
+                <div class="layer">
+                    <h3>Washington</h3>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+        <section class="facilities">
+            <h1>Our facilities</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="webimages/library.png" alt="">
+                    <h3>World Class Library</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur ducimus, est rem voluptatem consequuntur praesentium aliquam eius asperiores impedit dolore nobis quo provident sapiente laudantium, velit minima reiciendis quia.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="webimages/basketball.png" alt="">
+                    <h3>Largest Play Ground</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur ducimus, est rem voluptatem consequuntur praesentium aliquam eius asperiores impedit dolore nobis quo provident sapiente laudantium, velit minima reiciendis quia.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="webimages/cafeteria.png" alt="">
+                    <h3>Tasty and Healthy Food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur ducimus, est rem voluptatem consequuntur praesentium aliquam eius asperiores impedit dolore nobis quo provident sapiente laudantium, velit minima reiciendis quia.</p>
+                </div>
+            </div>
+        </section>
+
+    
+    <script>
+    
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+    </script>
 </body>
 </html>
